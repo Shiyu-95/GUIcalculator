@@ -72,7 +72,7 @@ def press_key(event):
     elif event.char == '\r':
         calculate()
     elif event.char == '\x08':
-        entry_window.delete(0)
+        entry_window.delete((len(entry_window.get()))-1)
 
 
 window.geometry(f'240x270+100+200')
